@@ -8,10 +8,10 @@ The project is designed to verify the read/write integrity of internal registers
 ## 2. Key Features
 - **Protocol Compliance:** AMBA 3 APB (Standard handshake with `PREADY` and `PSLVERR`).
 - **Data Width:** 8-bit.
-- [cite_start]**Address Space:** 8 internal R/W registers mapped from offset `0x00` to `0x07`
-- [cite_start]**Wait States:** Simulates hardware latency by inserting **2 wait cycles** per transaction (Configurable via `WAIT_CYCLES` parameter)
-- [cite_start]**Error Handling:** Asserts `PSLVERR` when accessing invalid addresses (Address > `0x07`)
-- [cite_start]**Verification:** Includes a self-checking testbench (`test_bench.v`) with randomized stimulus.
+- **Address Space:** 8 internal R/W registers mapped from offset `0x00` to `0x07`
+- **Wait States:** Simulates hardware latency by inserting **2 wait cycles** per transaction (Configurable via `WAIT_CYCLES` parameter)
+- **Error Handling:** Asserts `PSLVERR` when accessing invalid addresses (Address > `0x07`)
+- **Verification:** Includes a self-checking testbench (`test_bench.v`) with randomized stimulus.
 
 ## 3. Project Structure
 
